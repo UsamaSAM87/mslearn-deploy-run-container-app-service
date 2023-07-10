@@ -10,6 +10,7 @@ steps:
   inputs:
     containerRegistry: dotnetserviceconn
     repository: 'dotnet-app-ci-cd'
+    command: buildAndPush
     tags: |
      $(Build.BuildId)
      latest
