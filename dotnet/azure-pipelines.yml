@@ -8,8 +8,9 @@ steps:
 - task: Docker@2
   displayName: buildAndPush
   inputs:
-    containerRegistry: dotnetserviceconn
+    containerRegistry: dotnetappserviceconn2
     repository: 'dotnet-app-ci-cd'
+    command: buildAndPush
     tags: |
      $(Build.BuildId)
      latest
